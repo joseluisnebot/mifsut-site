@@ -1,0 +1,21 @@
+{
+  "name": "mifsut-site",
+  "version": "0.1.0",
+  "description": "Sitio Next.js con OpenNext desplegado en Cloudflare Workers",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:deploy": "opennextjs-cloudflare deploy"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@opennextjs/cloudflare": "^1.0.0-beta"
+  },
+  "devDependencies": {
+    "wrangler": "^3.42.0"
+  }
+}
