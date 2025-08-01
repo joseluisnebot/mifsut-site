@@ -1,0 +1,18 @@
+name = "mifsut-site"
+
+main = ".open-next/worker.js"
+
+compatibility_date = "2025-08-01"
+
+# Habilita el runtime de Node.js en Cloudflare Workers
+compatibility_flags = ["nodejs_compat"]
+
+# Configura los activos estáticos generados por OpenNext
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Ruta y dominio personalizado
+[[routes]]
+pattern = "mifsut.com"
+custom_domain = true
